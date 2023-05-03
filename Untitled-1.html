@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据查询与下载网站</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-image: linear-gradient(to right, #f7f7f7 0%, #c7c7c7 100%);
+        }
+
+        #page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        #content-wrap {
+            flex: 1;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">数据查询与下载</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">关于我们</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content-wrap">
+            <div class="container">
+                <h1 class="text-center">欢迎使用数据查询与下载网站</h1>
+                <div class="search-container text-center">
+                    <form class="form-inline d-inline-flex">
+                        <input class="form-control mr-sm-2" type="search" placeholder="请输入关键词" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">查询</button>
+                    </form>
+                </div>
+
+                <div id="results" class="text-center">
+                    <!-- 查询结果将显示在这里 -->
+                </div>
+
+                <div class="row mt-5" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-search fa-3x"></i>
+                                <h4 class="card-title mt-3">数据查询</h4>
+                                <p class="card-text">快速搜索海量数据，助您轻松找到所需信息。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-download fa-3x"></i>
+                                <h4 class="card-title mt-3">下载</h4>
+                                <p class="card-text">我们支持多种文件格式的下载，助您轻松获取所需数据。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users fa-3x"></i>
+                                <h4 class="card-title mt-3">社区支持</h4>
+                                <p class="card-text">我们拥有活跃的社区，您可以在社区中寻求帮助或分享经验。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer data-aos="fade-up" data-aos-duration="1000">
+            <div class="container text-center">
+                <p class="footer-text">版权所有 &copy; 数据查询与下载网站. 保留所有权利.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
